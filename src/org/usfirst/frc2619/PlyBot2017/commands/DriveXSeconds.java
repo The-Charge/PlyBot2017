@@ -45,6 +45,7 @@ public class DriveXSeconds extends TimedCommand {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	
+    	//runs at 1/4 speed for the duration of the command
     	Robot.driveTrain.run(0.25, 0.25);
     	
     }
@@ -53,6 +54,7 @@ public class DriveXSeconds extends TimedCommand {
     // Called once after isFinished returns true
     protected void end() {
     	
+    	//stops
     	Robot.driveTrain.run(0, 0);
     	
     }
@@ -61,6 +63,7 @@ public class DriveXSeconds extends TimedCommand {
     // subsystems is scheduled to run
     protected void interrupted() {
     	
+    	//stops
     	end();
     	
     }

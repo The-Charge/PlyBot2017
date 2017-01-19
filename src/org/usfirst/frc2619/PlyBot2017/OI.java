@@ -64,7 +64,7 @@ public class OI {
         rightJoystick = new Joystick(1);
         
         leftJoystick = new Joystick(0);
-        
+        //declares the drive 2 seconds command, (leftjoystick, button #3)
         drive2Seconds = new JoystickButton(leftJoystick, 3);
         drive2Seconds.whenPressed(new DriveXSeconds(2));
 
