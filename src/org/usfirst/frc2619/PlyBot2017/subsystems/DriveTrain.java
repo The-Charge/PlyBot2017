@@ -131,12 +131,12 @@ public class DriveTrain extends Subsystem {
     	double direction = MathUtil.calcDirection(getDegrees(), turnTo);
     	if(direction >= 0){
     		leftSpeed = speed;
-    		rightSpeed = 0;
+    		rightSpeed = -speed;
 			//run(speed, -speed);
 			SmartDashboard.putString("Direction", "right");
     	}
     	else if(direction < 0){
-    		leftSpeed = 0;
+    		leftSpeed = -speed;
     		rightSpeed = speed;
     		//run(-speed, speed);
     		SmartDashboard.putString("Direction", "left");

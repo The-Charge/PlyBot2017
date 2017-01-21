@@ -370,6 +370,27 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
     Name: TurnNDegreesRelative
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id008 []
+        name: Parameter presets
+        validators: null
+        value: *id008
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id009 []
+        name: Commands
+        validators: [List]
+        value: *id009
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command Group
+    Name: DriveASquare
   Properties: {}
   Base: Commands
   Name: Commands
