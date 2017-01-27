@@ -3,7 +3,7 @@ package org.usfirst.frc2619.motionrecording;
 import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.PIDSource;
 
-public class MotionPIDSet {
+public abstract class MotionPIDSet {
 	private PIDSource pidSource;
 	private PIDOutput pidOutput;
 	
@@ -19,4 +19,8 @@ public class MotionPIDSet {
 	public void setPidOutput(PIDOutput pidOutput) {
 		this.pidOutput = pidOutput;
 	}
+	
+	public abstract void startPID();
+	public abstract void stopPID();
+	public abstract void setPIDTarget(double target);
 }

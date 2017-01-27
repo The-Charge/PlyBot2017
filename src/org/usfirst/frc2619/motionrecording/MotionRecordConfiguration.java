@@ -37,6 +37,10 @@ public class MotionRecordConfiguration {
 		requiredSubsystems.add(s);
 	}
 	
+	public ArrayList<Subsystem> getRequiredSubsystems() {
+		return requiredSubsystems;
+	}
+	
 	protected void setRecordingFile(File f){
 		motionRecordingFile = f;
 	}

@@ -7,7 +7,7 @@ import org.usfirst.frc2619.motionrecording.MotionPIDSet;
 import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.PIDSource;
 
-public class DriveTrainLeftPIDSet extends MotionPIDSet{
+public class DriveTrainLeftPIDSet extends DriveTrainPIDSet{
 
 	public PIDSource getPidSource() {
 		return RobotMap.driveTrainLeftFrontMotor;
