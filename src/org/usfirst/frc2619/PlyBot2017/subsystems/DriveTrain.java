@@ -91,15 +91,19 @@ public class DriveTrain extends Subsystem {
 		SmartDashboard.putNumber("RightSpeed", rightSpeed);
 		if(!isReversed) {
 	    	leftFrontMotor.set(leftSpeed);
-	    	leftRearMotor.set(leftSpeed);
+	    	// Rear is set to follow mode
+	    	//leftRearMotor.set(leftSpeed);
 	    	rightFrontMotor.set(rightSpeed);
-	    	rightRearMotor.set(rightSpeed);
+	    	// Rear is set to follow mode
+	    	//rightRearMotor.set(rightSpeed);
 	    }
 		else {
 			leftFrontMotor.set(-1*rightSpeed);
-	    	leftRearMotor.set(-1*rightSpeed);
+			// Rear is set to follow mode
+	    	//leftRearMotor.set(-1*rightSpeed);
 	    	rightFrontMotor.set(-1*leftSpeed);
-	    	rightRearMotor.set(-1*leftSpeed);
+	    	// Rear is set to follow mode
+	    	//rightRearMotor.set(-1*leftSpeed);
 		}
 	}
     
