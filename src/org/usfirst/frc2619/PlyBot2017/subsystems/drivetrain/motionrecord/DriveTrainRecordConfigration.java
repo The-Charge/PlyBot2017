@@ -14,7 +14,7 @@ public class DriveTrainRecordConfigration extends MotionRecordConfiguration {
 		addRequiredSubsystem(Robot.driveTrain);
 		addMotionPIDSet(new DriveTrainLeftPIDSet());
 		addMotionPIDSet(new DriveTrainRightPIDSet());
-		setRecordingFile(new File("/driveTrainMotion.txt"));
+		setRecordingFile(new File("~/driveTrainMotion.txt"));
 	}
 	
 }

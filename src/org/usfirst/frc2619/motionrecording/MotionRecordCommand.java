@@ -16,6 +16,7 @@ public class MotionRecordCommand extends Command {
 
 	public MotionRecordCommand(MotionRecordConfiguration config){
 		this.config = config;
+		hadError = false;
 	}
 
     protected void initialize() {
