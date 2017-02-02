@@ -16,6 +16,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc2619.PlyBot2017.commands.*;
 import org.usfirst.frc2619.PlyBot2017.subsystems.*;
@@ -71,7 +72,10 @@ public class Robot extends IterativeRobot {
 
         chooser.addDefault("Forward Back 5", new DriveForwardBack5());
         chooser.addObject("Back Forward 5", new DriveBackForward5());
-        TheChargeDashboard.putData("Auto mode", chooser);
+        chooser.addObject("Get to the Gear Peg from Left Position", new GetToGearPegLeft());
+        chooser.addObject("Get to the Gear Peg from Middle Position", new GetToGearPegMiddle());
+        chooser.addObject("Get to the Gear Peg from Right Position", new GetToGearPegRight());
+        SmartDashboard.putData("Auto mode", chooser);
     }
 
     /**
